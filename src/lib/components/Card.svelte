@@ -24,7 +24,7 @@
 	a {
 		text-align: center;
 		display: block;
-		max-width: 33%;
+		max-width: 37%;
 		text-decoration: none;
 		color: #040d12;
 	}

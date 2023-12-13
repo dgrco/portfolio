@@ -13,7 +13,7 @@
 	<div class="latest flex flexcol colhcenter fadeIn">
 		<p class="latest-projects">Latest Projects</p>
 		<div class="flex hcenter">
-			<Card img={chess_engine_1} label="Chess Engine" tags={['C++', 'SDL2']} />
+			<Card img={chess_engine_1} label="Chess Engine" tags={['C++', 'SFML', 'Game']} />
 		</div>
 	</div>
 </div>
