@@ -7,7 +7,7 @@
     </span>
 	<div class="latest flex flexcol colhcenter">
 		<p class="latest-projects">Latest Projects</p>
-        <div class="projects flex hcenter">
+        <div class="projects flex hcenter" transition:fade>
             <Card img={chess_engine_1} />
         </div>
 	</div>
