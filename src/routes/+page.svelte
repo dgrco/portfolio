@@ -1,6 +1,7 @@
 <script>
 	import Card from '$lib/components/Card.svelte';
 	import chess_engine_1 from '$lib/assets/chess_engine_1.png';
+	import visualizer from '$lib/assets/visualizer.png';
 </script>
 
 <div class="showcase flex flexcol colhcenter">
@@ -12,8 +13,9 @@
 	</span>
 	<div class="latest flex flexcol colhcenter fadeIn">
 		<p class="latest-projects">Latest Projects</p>
-		<div class="flex hcenter">
-			<Card img={chess_engine_1} label="Chess Engine" tags={['C++', 'SFML', 'Game']} />
+		<div class="flex hcenter cards">
+			<Card url="/chess-engine" img={chess_engine_1} label="Chess Engine" tags={['C++', 'SFML', 'Game']} />
+			<Card url="/algorithm-visualizer" img={visualizer} label="Algorithm Visualizer" tags={['JS/TS', 'Svelte', 'CSS']} />
 		</div>
 	</div>
 </div>
@@ -30,6 +32,11 @@
 	.flex {
 		display: flex;
 	}
+
+    .cards {
+        display: flex;
+        align-items: center;
+    }
 
 	.colhcenter {
 		align-items: center;
@@ -101,6 +108,9 @@
 		.latest {
 			align-items: center;
 		}
+        .cards {
+            flex-direction: column;
+        }
 	}
 
 	@media only screen and (max-width: 768px) {
@@ -113,6 +123,9 @@
         .subtitle {
             margin-top: 1rem;
             font-size: 1rem;
+        }
+        .cards {
+            flex-direction: column;
         }
 	}
 

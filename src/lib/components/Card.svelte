@@ -1,12 +1,13 @@
 <script lang="ts">
+    export let url: string; // the page url
 	export let img: string; // image url as svelte import
 	export let label: string; // the title of the project
 	export let tags: Array<string>; // descriptors of the project
 </script>
 
-<a href="/chess-engine">
+<a href={url}>
 	<div class="card flexcol">
-		<img src={img} alt="Chess Engine" />
+		<img src={img} alt={label} />
 		<div class="description">
 			<p class="label">{label}</p>
 			<div class="tags">
@@ -24,9 +25,11 @@
 	a {
 		text-align: center;
 		display: block;
-		max-width: 37%;
 		text-decoration: none;
+        max-width: 30%;
+        flex: 1;
 		color: #040d12;
+        margin: 1rem;
 	}
 
 	.description {
@@ -70,8 +73,9 @@
 	img {
 		width: 100%;
 		height: 100%;
-		border-top-left-radius: 7;
-		border-top-right-radius: 7;
+        aspect-ratio: 1/1;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
 		border-bottom: 2px solid #040d12;
 	}
 
