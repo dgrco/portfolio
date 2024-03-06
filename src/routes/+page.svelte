@@ -2,6 +2,7 @@
 	import Card from '$lib/components/Card.svelte';
 	import chess_engine_1 from '$lib/assets/chess_engine_1.png';
 	import visualizer from '$lib/assets/visualizer.png';
+    import zenmark from '$lib/assets/zenmark.png';
 </script>
 
 <div class="showcase flex flexcol colhcenter">
@@ -16,6 +17,7 @@
 		<div class="flex hcenter cards">
 			<Card url="/chess-engine" img={chess_engine_1} label="Chess Engine" tags={['C++', 'SFML', 'Game']} />
 			<Card url="/algorithm-visualizer" img={visualizer} label="Algorithm Visualizer" tags={['JS/TS', 'Svelte', 'CSS']} />
+			<Card url="/zenmark" img={zenmark} label="Zenmark: Markdown Editor" tags={['JS/TS', 'Svelte', 'CSS']} />
 		</div>
 	</div>
 </div>
